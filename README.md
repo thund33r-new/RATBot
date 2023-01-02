@@ -5,9 +5,9 @@
 Как его настроить?
 :telescope: - Для начала вам нужно найти строку token = 'токен бота', затем вставить вместо содержимого в кавычках токен вашего бота.
 
-:ping_pong: - Затем скомпилировать данный Python код в exe, перед этим нужно установить библиотеки discord.py, pyscreenshot, webbrowser, requests и обязательно для компиляции pyinstaller
+:ping_pong: - Затем скомпилировать данный Python код в exe, перед этим нужно установить библиотеки discord.py, pyscreenshot, webbrowser, requests и обязательно для компиляции pyinstaller.
 
-:question: - Как же скомпилировать? Открываем командную строку в папке с Python кодом и вводим в нее вот эту команду: pyinstaller -F --noconsole bot.py
+:question: - Как же скомпилировать? Открываем командную строку в папке с Python кодом и вводим в нее вот эту команду: pyinstaller -F --noconsole bot.py.
 
 :bulb: - На этом все.
 
