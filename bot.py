@@ -25,6 +25,7 @@ bot.remove_command('help')
 if os.name == "nt":
     os.system("cls")
     os.system("title CyberBot")
+	
 @bot.event
 async def on_ready():
      while True:
